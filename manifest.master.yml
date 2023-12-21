@@ -1,0 +1,16 @@
+plugin:
+  name: fylr-custom-css
+  version: 1.0
+  url: http://include-here-the-url-to-your-plugin-repo
+  displayname:
+    en-US: Fylr Custom CSS Plugin
+  info:
+    en-US: "An example plugin for custom css on fylr."
+  webfrontend:
+    css: custom-style.css
+
+base_url_prefix: "webfrontend"
+
+
+
+
