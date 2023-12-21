@@ -5,7 +5,6 @@ Plugin for showing how to include custom css in the app.
 This plugin is intended for educational purposes and should not be used in production setups.
 
 ## Requeriments
- - Coffescript @1.12.7
  - Sass
 
 
