@@ -6,12 +6,19 @@ BUILD_DIR = build
 ## Style Files
 SCSS_FILES = src/webfrontend/scss/main.scss
 
+## L10N
+L10N_DIR = $(BUILD_DIR)/$(PLUGIN_NAME)/l10n
+L10N_CSV_FILE = src/l10n/custom-loca.csv
 
 all: build ## build all
 
+loca:
+	mkdir -p $(L10N_DIR)
+	cp $(L10N_CSV_FILE) $(L10N_DIR)
 
 
-build: clean css  # build all (creates build folder)
+
+build: clean css loca  # build all (creates build folder)
 	mkdir -p $(BUILD_DIR)/$(PLUGIN_NAME)
 	cp manifest.master.yml $(BUILD_DIR)/$(PLUGIN_NAME)/manifest.yml
 
